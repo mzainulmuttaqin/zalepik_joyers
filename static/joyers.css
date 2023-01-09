@@ -1,0 +1,99 @@
+.joyers_max_width{
+    max-width: 1188px;
+    margin: auto;
+}
+
+nav{
+    padding: 8px 0px;
+}
+
+nav img{
+    display: inline-block;
+}
+
+nav ul{
+    gap: 24px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.joyers_nav_dropdown:after{
+    content: url(images/svg/icon_dropdown.svg);
+    vertical-align: middle;
+    margin-left: 4px
+}
+
+nav ul li.joyers_nav_small{
+font-family: Sora;
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+nav #joyers_whatsapp{
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+nav #joyers_whatsapp img{
+    display: inline-block;
+    margin-left: 8px
+}
+
+/*=================================================== Header ==========================*/
+h1{
+    font-family: Sora;
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.joyers_subtitle{
+    font-family: Sora;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.joyers_button{
+    height: 56px;
+    width: 236px;
+    border-radius: 20px;
+    padding: 16px 20px 16px 20px;
+    background: #EE3869;
+    color: white;
+    display: inline-grid !important;
+    width: fit-content;
+    grid-auto-flow: column;
+}
+
+.joyers_button_white{
+    height: 56px;
+    width: 236px;
+    border-radius: 20px;
+    padding: 16px 20px 16px 20px;
+    background: white;
+    color: #EE3869;
+}

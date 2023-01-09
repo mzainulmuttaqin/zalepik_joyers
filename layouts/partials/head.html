@@ -1,0 +1,76 @@
+<head>
+    <!-- ... -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+              colors: {
+                'blue': '#1fb6ff',
+                'purple': '#7e5bef',
+                'pink': '#ff49db',
+                'orange': '#ff7849',
+                'green': '#13ce66',
+                'yellow': '#ffc82c',
+                'gray-dark': '#273444',
+                'gray': '#8492a6',
+                'gray-light': '#d3dce6',
+                'joyers': '#EE3869',
+              },
+              fontFamily: {
+                sans: ['Sora', 'sans-serif'],
+                serif: ['Merriweather', 'serif'],
+              },
+              extend: {
+                spacing: {
+                  '8xl': '96rem',
+                  '9xl': '128rem',
+                },
+                borderRadius: {
+                  '4xl': '2rem',
+                }
+              }
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="joyers.css">
+    <title>
+        {{/*  {{ if .IsHome }}
+            {{.Site.Title}} | Zalepik.com
+        {{ else if .IsPage }}
+            {{.Title}} | Zalepik.com
+        {{ else if .Params.zlist }}
+            {{.Title}} | Zalepik.com
+        {{ else if .Params.writer }}
+            {{.Params.zname_writer}} | Zalepik.com
+        {{ else if .Page }}
+            {{.Title}} | Zalepik.com
+        {{ else }}
+            Error 404 | Zalepik.com
+        {{ end }}  */}}
+    </title>
+    {{/*  <link rel="icon" type="image/png" href="images/svg/fav_icon_joyers.svg">  */}}
+    {{ if .Description }}
+        <meta name="description" content="{{ .Description }}"/>
+    {{ else if eq .Kind "section" }}
+        <meta name="description" content="{{ .Summary }}"/>
+    {{ else }}
+        <meta name="description" content="{{ .Site.Params.Description }}"/>
+    {{ end }}  
+
+    {{/*  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHMEH4HT62"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XHMEH4HT62');
+    </script>
+
+    {{ template "_internal/opengraph.html" . }}  */}}
+</head>
