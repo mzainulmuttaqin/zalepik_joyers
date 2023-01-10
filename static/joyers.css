@@ -1,3 +1,8 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .joyers_max_width{
     max-width: 1188px;
     margin: auto;
@@ -85,8 +90,9 @@ h1{
     background: #EE3869;
     color: white;
     display: inline-grid !important;
-    width: fit-content;
+    width: fit-content !important;
     grid-auto-flow: column;
+    box-shadow: 0px 4px 24px 0px #FFB11533;
 }
 
 .joyers_button_white{
@@ -96,4 +102,272 @@ h1{
     padding: 16px 20px 16px 20px;
     background: white;
     color: #EE3869;
+}
+
+.joyers_button_circle{
+    padding: 8px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.joyers_button_nofill{
+    background: #FFFFFF00;
+    box-shadow: none;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    padding: 0px;
+}
+
+.joyers_collection_product_wrap_slider{
+
+}
+
+.joyers_collection_product{
+    width: 75%
+}
+
+.joyers_collection_product .slider-container>*{
+    width: fit-content !important;
+
+}
+
+.joyers_item_product{
+    display: inline-block;
+    background: #D9D9D9;
+    height: 244px;
+    width: 288px;
+    border-radius: 20px;
+    padding: 204px 8px 8px 8px;
+    box-shadow: 0px 4px 24px 0px #FFB11533;
+}
+
+.joyers_item_product div{
+    background: white;
+    height: 32px;
+    width: 272px;
+    border-radius: 12px;
+    padding: 4px 12px 4px 12px;
+    font-family: 'Sora';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.joyers_item_product div img{
+    display: inline-block;
+}
+
+.joyers_after_line_black:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background: black;
+    width: 320px;
+    margin-right: 0px;
+}
+
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+/* .slider-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    visibility: hidden;
+    opacity: .8;
+    transition: visibility .1s,opacity .2s linear;
+    margin-bottom: var(--swiffy-slider-track-height);
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    -webkit-filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, .5));
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, .5));
+    transform: scale(var(--swiffy-slider-nav-zoom));
+} */
+
+/*============================== Joyers_Title_Section ===================*/
+.joyers_title_section{
+    font-family: Sora;
+    font-size: 36px !important;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#joyers_carousel_article .slider-container{
+    margin: 0px;
+}
+
+#joyers_carousel_article .slider-nav{
+    position: relative !important;
+}
+
+#joyers_carousel_article .slider-nav:before,
+#joyers_carousel_article .slider-nav:after{
+    display: none;
+}
+
+button.joyers_button{
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 16px !important;
+    padding: 8px !important;
+    background: #EE3869;
+    color: white;
+    display: inline-grid !important;
+    width: fit-content !important;
+    grid-auto-flow: column !important;
+    box-shadow: 0px 4px 24px 0px #FFB11533 !important;
+    margin: 0px !important;
+    filter: unset !important;
+    -webkit-filter: unset !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -ms-border-radius: 16px !important;
+    -o-border-radius: 16px !important;
+}
+
+button.joyers_button.joyers_button_white{
+    background: white;
+    color: #EE3869;
+    border: 1px solid #EE3869
+}
+
+.joyers_button_nofill{
+    height: fit-content !important;
+}
+
+.py-0{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important
+}
+
+.joyers_item_article{
+    display: inline-block;
+    width: 388px;
+    box-shadow: 0px 4px 24px 0px #FFB11533;
+    padding-bottom: 12px;
+}
+
+.joyers_item_article div{
+    background: white;
+    padding: 4px 12px 4px 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.joyers_item_article div img{
+    display: inline-block;
+}
+
+.joyers_item_article>img{
+    height: 306px;
+    width: 388px;
+    background-color: grey;
+}
+
+.slider-container{
+    overflow: visible !important;
+    overflow-x: scroll !important;
+    overflow-y: visible !important;
+    padding: 32px 0px 24px 0px;
+}
+
+.joyers_item_article .joyers_arrow_enter{
+    background-color: unset !important;
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px
+}
+
+.joyers_item_article>span{
+    background: #EE3869;
+    padding: 4px 8px;
+    font-family: Sora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-left: 16px;
+    display: inline-block;
+}
+
+.joyers_collection_large_article .joyers_item_article div{
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.joyers_collection_large_article .joyers_item_article{
+    width: unset !important;
+    padding-bottom: 0px !important;
+    padding-top: 12px !important;
+}
+
+.joyers_collection_large_article .joyers_item_article>img:not(.joyers_arrow_enter){
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    background: #FEF7F9;
+}
+
+footer a{
+    font-family: Sora;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
 }
